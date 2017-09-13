@@ -1,3 +1,232 @@
+/* reset css*/
 body {
-	background: #009F88;
+	background: #80a8cc;
+	margin: 0;
+	font-family: monospace, sans-serif;
+}
+ul, p, h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	color: #d8d6d5;
+}
+
+/* common */
+.header, .container, .footer {
+	margin: 0 auto;
+	max-width: 1600px;
+}
+.btn {
+	padding: 5px 10px;
+	border: 1px solid #eae7e2;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 14px;
+	min-width: 100px;
+	cursor: pointer;
+}
+/* header */
+
+.header {
+	height: 100px;
+	text-align: center;
+	background: #fcf9f4;
+}
+.header-item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo {
+	height: 100%;
+}
+
+.nav {
+	margin: 0 30px;
+	padding: 0 30px;
+	line-height: 100px;
+	border: 1px solid #eae7e2;
+	border-top: none;
+	border-bottom: none;
+	font-size: 18px;
+}
+.nav-item {
+	display: inline;
+	margin-right: 30px;
+}
+.nav-item:last-child {
+	margin-right: 0;
+}
+
+/* container */
+
+.panel {
+	position: relative;
+	height: 794px;
+	text-align: center;
+	background: url('../images/hero.png') no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.panel::after {
+	content: '';
+	position: absolute;
+	background: rgba(126, 126, 126, 0.4);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.panel-content {
+	position: absolute;
+	height: 200px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto; 
+	z-index: 1;
+}
+
+.panel-content h1 {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.panel-content .btn{
+	width: 270px;
+	height: 60px;
+	margin-right: 30px;
+	background-color: transparent;
+	color: #fff;
+	font-size: 24px;
+}
+
+.panel-content .btn:last-child {
+	margin-right: 0;
+	background-color: rgba(255,255,255,0.2);
+	border: none;
+}
+
+/* sections */
+.section {
+	padding: 170px 300px;
+	background: #fff;
+	text-align: center;
+}
+
+.section h2 {
+	margin-bottom: 32px;
+	font-size: 52px;
+	color: #4d4e59;
+}
+
+.section .desc {
+	margin-bottom: 32px;
+	color: #636471;
+	font-size: 20px;
+}
+
+.section .btn {
+	width: 300px;
+	height: 60px;
+	background: rgba(64, 64, 64, 0.2);
+	border: none;
+	font-size: 20px;
+	color: #fff;
+}
+
+.section img {
+	width: 320px;
+	height: 320px;
+}
+
+.mission .btn{
+	background: #ffcd62;
+	color: #636471;
+}
+
+/* section group */
+.section-group .section{
+	text-align: left;
+}
+
+.section-group h2, .section-group .desc, .section-group .btn {
+	color: #fff
+}
+
+.section-group .section img {
+	float: left;
+	margin-right: 138px;
+}
+
+.section-group .section:nth-child(even) img{
+	float: right;
+	margin-right: 0;
+	margin-left: 138px;
+}
+/* student */
+.students {
+	background: #91d0b1;
+}
+/* tutors */
+.tutors {
+	background: #ffcd62;
+}
+/* partners */
+.partners {
+	background: #80a8cc;
+}
+
+/* record */
+.section.record {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.tutor-record .item{
+	display: inline-block;
+	border: 1px solid #eeece7;
+	width: 350px;
+	height: 350px;
+	margin-right: 20px;
+}
+.tutor-record .item:last-child {
+	margin-right: 0;
+}
+
+.tutor-record .number {
+	font-size: 72px;
+	margin-top: 100px;
+    margin-bottom: 30px;
+}
+.tutor-record .category {
+	font-size: 16px;
+}
+.tutor-record .hours {
+	color: #91d0b1;
+}
+.tutor-record .session {
+	color: #ffcd62;
+}
+.tutor-record .volunteer {
+	color: #80a8cc;
+}
+
+/* footer */
+.footer {
+	height: 100px;
+	line-height: 100px;
+	background: #4d4e59;
+	text-align: center;
+	color: #d4d2d0;
 }
